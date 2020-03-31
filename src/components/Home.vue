@@ -8,7 +8,7 @@
                 </div>
                 <!--<div class="swiper-slide">-->
                     <!--&lt;!&ndash;swiper-no-swiping&ndash;&gt;-->
-                    <!--<Details :pageId="9" />-->
+                    <!--<Details :pageId="7" />-->
                 <!--</div>-->
                 <div class="swiper-slide">
                     <SeepBox :bgSrc="'pic1'" isClass="txt_pic1" />

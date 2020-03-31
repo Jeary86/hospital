@@ -10,12 +10,6 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="page-slide">
-                        <img src="../assets/pic_matter1_1.png" />
-                    </div>
-
-                </div>
-                <div class="swiper-slide">
-                    <div class="page-slide">
                         <img src="../assets/pic_matter1_2.png" />
                     </div>
                 </div>
@@ -27,6 +21,11 @@
                 <div class="swiper-slide">
                     <div class="page-slide">
                         <img src="../assets/pic_matter1_4.png" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page-slide">
+                        <img src="../assets/pic_matter1_1.png" />
                     </div>
                 </div>
             </div>
