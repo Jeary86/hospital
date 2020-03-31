@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>同济</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <script src="static/lib/viewport-units-buggyfill.min.js"></script>
+  <link href="static/css/swiper.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="app"></div>
+<!--<audio id="bgMusic" src="./music/bgm.mp3" preload="auto" autoplay="autoplay" loop></audio>-->
+<script type="text/javascript" src="static/lib/swiper.min.js"></script>
+<script type="text/javascript" src="static/lib/createjs.min.js"></script>
+<script type="text/javascript" src="static/lib/jweixin-1.0.0.js"></script>
+<script>
+
+    // document.addEventListener("WeixinJSBridgeReady", function() {
+    //     document.getElementById("bgMusic").play();
+    //
+    //     setTimeout(()=>{
+    //         document.getElementById("bgMusic").pause();
+    //     },10)
+    // }, false);
+
+
+    window.onload = function() {
+        window.viewportUnitsBuggyfill.init({
+            hacks: window.viewportUnitsBuggyfillHacks
+        });
+        
+        window.alert = function(name){
+            var iframe = document.createElement("IFRAME");
+            iframe.style.display="none";
+            iframe.setAttribute("src", 'data:text/plain,');
+            document.documentElement.appendChild(iframe);
+            window.frames[0].window.alert(name);
+            iframe.parentNode.removeChild(iframe);
+        }
+    }
+</script>
+</body>
+</html>
