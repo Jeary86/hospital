@@ -34,7 +34,7 @@
                     let name = item.substring(0, item.indexOf("."));
                     let path = require('../assets/' + item);
                     imgArray.push({id:name,src:path})
-                })
+                });
 
                 // console.log(imgArray)
 
@@ -50,9 +50,9 @@
             },
             handleComplete(){
                 console.log("加载完成...")
-                window.wx.ready(() => {
-                    // document.getElementById("bgMusic").play()
-                });
+                // window.wx.ready(() => {
+                //     document.getElementById("bgMusic").play()
+                // });
                 this.$store.dispatch('setLoaderName','home')
             }
         }
