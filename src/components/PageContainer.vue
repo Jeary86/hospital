@@ -70,6 +70,7 @@
 
 <script>
     import { mapGetters } from 'vuex';
+    import Data from '../config/data.js';
     export default {
         name: "PageContainer",
         computed: {
@@ -79,27 +80,7 @@
             return{
                 pageId : this.pageIndex -1,
                 isDown : true,
-                picData : [{
-                    src : [require('../assets/page1_pic1.jpg')]
-                },{
-                    src : [require('../assets/page2_pic1.jpg')]
-                },{
-                    src : [require('../assets/page3_pic1.jpg'),require('../assets/page3_pic2.jpg'),require('../assets/page3_pic3.jpg')]
-                },{
-                    src : [require('../assets/page4_pic1.jpg')]
-                },{
-                    src : [require('../assets/page5_pic1.jpg'),require('../assets/page5_pic2.jpg')]
-                },{
-                    src : [require('../assets/page6_pic1.jpg')]
-                },{
-                    src : [require('../assets/page7_pic1.jpg')]
-                },{
-                    src : [require('../assets/page8_pic1.jpg')]
-                },{
-                    src : [require('../assets/page9_pic1.jpg')]
-                },{
-                    src : [require('../assets/page10_pic1.jpg')]
-                },]
+                picData : Data.data
             }
         },
         mounted(){

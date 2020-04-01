@@ -10,23 +10,47 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="page-slide">
-                        <img src="../assets/pic_matter4_1.jpg" />
-                    </div>
-
-                </div>
-                <div class="swiper-slide">
-                    <div class="page-slide">
-                        <img src="../assets/pic_matter4_2.jpg" />
+                        <img src="../assets/pic_matter4_1.png" />
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="page-slide">
-                        <img src="../assets/pic_matter4_3.jpg" />
+                        <img src="../assets/pic_matter4_2.png" />
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="page-slide">
-                        <img src="../assets/pic_matter4_4.jpg" />
+                        <img src="../assets/pic_matter4_3.png" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page-slide">
+                        <img src="../assets/pic_matter4_4.png" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page-slide">
+                        <img src="../assets/pic_matter4_5.png" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page-slide">
+                        <img src="../assets/pic_matter4_6.png" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page-slide">
+                        <img src="../assets/pic_matter4_7.png" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page-slide">
+                        <img src="../assets/pic_matter4_8.png" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page-slide">
+                        <img src="../assets/pic_matter4_9.png" />
                     </div>
                 </div>
             </div>
@@ -67,12 +91,12 @@
 
 <style lang="less" scoped>
 .page-matter4{
-    width:100%;position:absolute;z-index:88;margin-top:2px;
+    width:100%;position:absolute;z-index:88;
     /*.page-slide{*/
-        /*width:499px;position:relative;margin-left:-60px;*/
+        /*width:100%;position:relative;margin-top:-100px;*/
     /*}*/
     .btn_left,.btn_right{
-        width:50px;position:absolute;z-index:99999;margin-top:500px;
+        width:50px;position:absolute;z-index:99999;margin-top:650px;
     }
 
     .btn_left{
