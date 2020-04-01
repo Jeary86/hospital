@@ -3,13 +3,13 @@
         <BtnMusic />
         <div class="swiper-container" id="swiperPage">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <HomePage />
-                </div>
                 <!--<div class="swiper-slide">-->
-                    <!--&lt;!&ndash;swiper-no-swiping&ndash;&gt;-->
-                    <!--<Details :pageId="5" />-->
+                    <!--<HomePage />-->
                 <!--</div>-->
+                <div class="swiper-slide">
+                    <!--swiper-no-swiping-->
+                    <Details :pageId="5" />
+                </div>
                 <div class="swiper-slide">
                     <SeepBox :bgSrc="'pic1'" isClass="txt_pic1" />
                 </div>
