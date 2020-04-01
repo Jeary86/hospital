@@ -38,11 +38,11 @@
 
         .page_txt1{
             width:21px;position:absolute;top:50%;
-            margin-left:322px;margin-top:-420px;
+            margin-left:322px;margin-top:-476px;
         }
         .page_txt2{
             width:21px;position:absolute;top:50%;
-            margin-left:402px;margin-top:-420px;
+            margin-left:402px;margin-top:-476px;
         }
     }
 

@@ -67,6 +67,7 @@
 </template>
 
 <script>
+    import Data from '../config/data.js';
     export default {
         name: "Details",
         props :{
@@ -76,31 +77,10 @@
             return{
                 isDown : true,
                 isShow : true,
-                picData : [{
-                    src : [require('../assets/page1_pic1.jpg')]
-                },{
-                    src : [require('../assets/page2_pic1.jpg')]
-                },{
-                    src : [require('../assets/page3_pic1.jpg'),require('../assets/page3_pic2.jpg'),require('../assets/page3_pic3.jpg')]
-                },{
-                    src : [require('../assets/page4_pic1.jpg')]
-                },{
-                    src : [require('../assets/page5_pic1.jpg'),require('../assets/page5_pic2.jpg')]
-                },{
-                    src : [require('../assets/page6_pic1.jpg')]
-                },{
-                    src : [require('../assets/page7_pic1.jpg')]
-                },{
-                    src : [require('../assets/page8_pic1.jpg')]
-                },{
-                    src : [require('../assets/page9_pic1.jpg')]
-                },{
-                    src : [require('../assets/page10_pic1.jpg')]
-                },]
+                picData : Data.data
             }
         },
         mounted(){
-
             let t = this;
             t.$nextTick(()=>{
                 console.log(this.pageId)

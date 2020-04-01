@@ -63,17 +63,11 @@
     #loading{
         width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 8888; display: block;overflow: hidden;
         p{
-            color: #FFF;position:absolute;top:50%;text-align: center; margin-top: 10px;z-index: 999;font-size: 40px;width:100%;
-        }
-        b{
-            width: 100%;position: absolute;z-index: 888;top:50%;margin-top: -10px;text-align: center;left: 0;
+            color: #FFF;position:absolute;top:50%;text-align: center; margin-top: 0px;z-index: 999;font-size: 35px;width:100%;
         }
         .loading_pic{
-            width:225px;position:absolute;z-index:88;
-            top:50%;
-            margin-top:-(225px/2);
-            left:50%;
-            margin-left:-(225px/2);
+            width:229px;position:absolute;z-index:88;
+            left:50%;margin-left:-(229px/2);bottom:130px;
         }
         .bg{
             width: 100%;position: absolute;z-index:1;top:50%;margin-top:-823px;

@@ -35,7 +35,7 @@
 
         .page_txt1{
             width:221px;position:absolute;left:50%;top:50%;
-            margin-left:-107px;margin-top:-420px;
+            margin-left:-107px;margin-top:-320px;
         }
     }
 
