@@ -21,7 +21,7 @@
 
 <style lang="less" scoped>
 .btn-return{
-    width:73px;position:absolute;z-index:888;
-    left:50%; bottom:40px;margin-left:-73px/2;
+    width:135px;position:absolute;z-index:888;
+    left:50%; bottom:40px;margin-left:-135px/2;
 }
 </style>

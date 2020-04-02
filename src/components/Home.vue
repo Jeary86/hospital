@@ -17,7 +17,10 @@
                     <SeepBox :bgSrc="'pic2'" :intId="4" :num="7" isClass="txt_pic2" />
                 </div>
                 <div class="swiper-slide">
-                    <SeepBox :bgSrc="'pic3'" :intId="7" :num="10" isClass="txt_pic3" :isDown="false" />
+                    <SeepBox :bgSrc="'pic3'" :intId="7" :num="10" isClass="txt_pic3" />
+                </div>
+                <div class="swiper-slide">
+                    <SeepEnd />
                 </div>
             </div>
         </div>

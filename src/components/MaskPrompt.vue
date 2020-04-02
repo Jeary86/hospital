@@ -1,6 +1,6 @@
 <template>
     <transition name="mask" v-if="seepIndex == 1 && isMask">
-        <div class="mask-prompt">
+        <div class="mask-prompt" @click="onClickMask">
             <div class="mask_txt">
                 <img src="../assets/mask_txt.png" />
             </div>
@@ -21,16 +21,21 @@
             ...mapGetters(['seepIndex']),
         },
         watch:{
-            seepIndex(val){
-                // console.log(val)
-                setTimeout(()=>{
-                    this.isMask = false
-                },2000)
-            }
+            // seepIndex(val){
+            //     // console.log(val)
+            //     setTimeout(()=>{
+            //         this.isMask = false
+            //     },2000)
+            // }
         },
         mounted(){
 
 
+        },
+        methods:{
+            onClickMask(){
+                this.isMask = false;
+            }
         }
     }
 </script>
@@ -44,7 +49,7 @@
     }
 
     .mask-enter-active, .mask-leave-active {
-        transition: opacity 1s;
+        transition: opacity 0.8s;
     }
     .mask-enter, .mask-leave-to {
         opacity: 0;
