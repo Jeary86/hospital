@@ -12,8 +12,10 @@
         },
         methods:{
             onClickReturn(){
-                this.$store.dispatch('setPageIndex',0)
-                this.$store.dispatch('setHomeStyle',true)
+                // this.$store.dispatch('setPageIndex',0)
+                // this.$store.dispatch('setHomeStyle',true)
+
+                this.$store.dispatch('setIsPraise',true)
             }
         }
     }

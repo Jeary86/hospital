@@ -1,6 +1,7 @@
 <template>
     <div class="page-container">
         <SeepDown :isFixed="false" v-show="isDown" />
+        <MaskTxt />
         <div class="swiper-container" id="page-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">

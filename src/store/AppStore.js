@@ -5,6 +5,8 @@ export default {
         seepIndex : 0,
         pageIndex : 0,
         detailsIndex :-1,
+        isPraise : false
+
     },
     mutations: {
         SET_LOADER_NAME: (state, payload) => {
@@ -21,6 +23,9 @@ export default {
         },
         SET_DETAILS_INDEX: (state, payload) => {
             state.detailsIndex = payload
+        },
+        SET_IS_PRAISE: (state, payload) => {
+            state.isPraise = payload
         },
     },
     actions: {
@@ -39,6 +44,9 @@ export default {
         setDetailsIndex: ({commit, state}, payload) => {
             return commit('SET_DETAILS_INDEX', payload)
         },
+        setIsPraise: ({commit, state}, payload) => {
+            return commit('SET_IS_PRAISE', payload)
+        },
     },
     getters: {
         loaderName: state => state.loaderName,
@@ -46,5 +54,6 @@ export default {
         seepIndex: state => state.seepIndex,
         pageIndex: state => state.pageIndex,
         detailsIndex: state => state.detailsIndex,
+        isPraise: state => state.isPraise,
     }
 }

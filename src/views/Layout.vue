@@ -1,9 +1,6 @@
 <template>
     <div class="Layout">
         <MaskPrompt />
-        <transition name="details">
-            <Details v-if="detailsIndex != -1" />
-        </transition>
 
         <transition name="page">
             <PageContainer v-if="pageIndex != 0" />
@@ -58,13 +55,4 @@
         opacity:0;
     }
 
-    .details-enter-active {
-        transition: all 0.5s ease;
-    }
-    .details-leave-active {
-        transition: all 0.5s ease;
-    }
-    .details-enter, .details-leave-to{
-        transform: translateX(100%);
-    }
 </style>
