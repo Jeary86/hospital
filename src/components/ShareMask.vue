@@ -28,7 +28,7 @@
     .share-mask{
         width:100%;height:100%;position:fixed;background:rgba(0,0,0,0.6);z-index:8888;
         .share_pic{
-            width:96px;position:absolute;right:10px;top:30px;
+            width:96px;position:absolute;right:10px;top:10px;
         }
     }
 </style>
