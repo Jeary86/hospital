@@ -1,7 +1,7 @@
 <template>
     <div class="Layout">
         <MaskPrompt />
-
+        <ShareMask />
         <transition name="page">
             <PageContainer v-if="pageIndex != 0" />
         </transition>
@@ -11,7 +11,6 @@
             <Loading v-if="loaderName === 'loading'"  />
             <Home v-if="loaderName === 'home'" v-show="homeStyle" />
         </transition>
-        <!--<audio id="music" preload loop="loop" autoplay src="../music/bgm.mp3"></audio>-->
     </div>
 </template>
 
@@ -19,11 +18,12 @@
 
     import { mapGetters } from 'vuex'
     import PageContainer from "../components/PageContainer";
+    import ShareMask from "../components/ShareMask";
     export default {
         name: "Layout",
-        components: {PageContainer},
+        components: {ShareMask, PageContainer},
         computed: {
-            ...mapGetters(['loaderName','seepIndex','pageIndex','detailsIndex','homeStyle']),
+            ...mapGetters(['loaderName','seepIndex','pageIndex','homeStyle']),
         },
         watch : {
             loaderName(val){

@@ -4,9 +4,8 @@ export default {
         homeStyle : true,
         seepIndex : 0,
         pageIndex : 0,
-        detailsIndex :-1,
-        isPraise : false
-
+        isPraise : false,
+        isShare : false
     },
     mutations: {
         SET_LOADER_NAME: (state, payload) => {
@@ -21,11 +20,11 @@ export default {
         SET_PAGE_INDEX: (state, payload) => {
             state.pageIndex = payload
         },
-        SET_DETAILS_INDEX: (state, payload) => {
-            state.detailsIndex = payload
-        },
         SET_IS_PRAISE: (state, payload) => {
             state.isPraise = payload
+        },
+        SET_IS_SHARE: (state, payload) => {
+            state.isShare = payload
         },
     },
     actions: {
@@ -41,11 +40,11 @@ export default {
         setPageIndex: ({commit, state}, payload) => {
             return commit('SET_PAGE_INDEX', payload)
         },
-        setDetailsIndex: ({commit, state}, payload) => {
-            return commit('SET_DETAILS_INDEX', payload)
-        },
         setIsPraise: ({commit, state}, payload) => {
             return commit('SET_IS_PRAISE', payload)
+        },
+        setIsShare: ({commit, state}, payload) => {
+            return commit('SET_IS_SHARE', payload)
         },
     },
     getters: {
@@ -53,7 +52,7 @@ export default {
         homeStyle: state => state.homeStyle,
         seepIndex: state => state.seepIndex,
         pageIndex: state => state.pageIndex,
-        detailsIndex: state => state.detailsIndex,
         isPraise: state => state.isPraise,
+        isShare: state => state.isShare,
     }
 }

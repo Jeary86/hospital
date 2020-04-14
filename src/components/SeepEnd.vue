@@ -7,7 +7,9 @@
                 </li>
             </transition-group>
         </div>
-
+        <div class="btn_share" @click="onClickShare">
+            <img src="../assets/btn_share.png" />
+        </div>
         <div class="bg">
             <img src="../assets/catalog_pic4.jpg" />
         </div>
@@ -62,6 +64,11 @@
         },
         mounted(){
 
+        },
+        methods:{
+            onClickShare(){
+                this.$store.dispatch('setIsShare',true);
+            }
         }
     }
 </script>
@@ -88,6 +95,11 @@
     .my-enter-active,
     .my-leave-active {
         transition: all 1s ease;
+    }
+
+    .btn_share{
+        width:145px;position:absolute;z-index:99;top:50%;left:50%;
+        margin-left:-145px/2;margin-top:440px;
     }
 
     .bg{

@@ -39,10 +39,4 @@
             width:375px;position:absolute;left:50%;top:50%;margin-left:-375px/2;margin-top:-63px/2;
         }
     }
-    .mask-enter-active, .mask-leave-active {
-        transition: opacity 0.8s;
-    }
-    .mask-enter, .mask-leave-to {
-        opacity: 0;
-    }
 </style>

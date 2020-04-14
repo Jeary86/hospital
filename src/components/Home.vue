@@ -6,10 +6,6 @@
                 <div class="swiper-slide">
                     <HomePage />
                 </div>
-                <!--<div class="swiper-slide">-->
-                    <!--&lt;!&ndash;swiper-no-swiping&ndash;&gt;-->
-                    <!--<Details :pageId="5" />-->
-                <!--</div>-->
                 <div class="swiper-slide">
                     <SeepBox :bgSrc="'pic1'" isClass="txt_pic1" />
                 </div>
